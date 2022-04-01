@@ -27,6 +27,7 @@
   - [6.	DESCUENTOS FINANCIEROS](#6descuentos-financieros)
     - [Mensajes de información](#mensajes-de-información)
     - [Mensajes de error](#mensajes-de-error)
+  - [7.	CONSULTA EXTRACTO DE HONORARIOS](#7consulta-extracto-de-honorarios)
 # FUNCIONALIDADES PROVEEDORES
 
 Los errores conocidos expuestos en el presente documento hacen referencia a validaciones de nivel 1 que debe realizar la mesa de ayuda, en caso de persistir el error se debe escalar a nivel 2 que para estos casos es el ULA de la aplicación, quien hará las validaciones pertinentes y dará solución de ser posible, de igual manera determinará a quien debe escalar de ser necesario.
@@ -186,3 +187,18 @@ No se recomienda utilizar Internet Explorer ya que no se encuentra soportado por
 | MERRO_026      | Notificación por correo de estado de la solicitud                                                      | BPM_Descuentos Financieros - Usuario Externo | El proveedor no recibe correo de notificación de solicitud en progreso, aprobada o rechazada                                                                                                                                                                                                             | No se genera mensaje de error en el sistema                                                                                                        | Verificar el correo registrado por el usuario en la solicitud. Si la dirección de correo electrónico es correcta, se deben validar las reglas de salida de correo                                                                                                                                                                                                                                          |
 | MERRO_027      | Carga del visor                                                                                        | BPM_Descuentos Financieros - Usuario Externo | La pantalla del visor no responde en la carga inicial                                                                                                                                                                                                                                                    | ![](Images/2022-03-31-15-13-04.png) No se genera mensaje de error en el sistema                                                                                                                                                  | - Validar que el usuario se encuentra habilitado como proveedor en ERP SAP                                                  - Validar la conectividad entre el servidor del visor y los servicios expuestos en el balanceador.                                         - Verificar que los servicios se encuentran activos en SAP PO.                                                                                                                                                                                                                                      |
 | MERRO_028      | Finalización de la sesión                                                                              | BPM_Descuentos Financieros - Usuario Externo | El visor de descuentos redirige a https://corporativo.compensar.com/                                                                                                                                                                                                                                     |              ![](Images/2022-03-31-15-15-09.png) No se genera mensaje de error en el sistema                                                                                                                                      | La sesión del usuario expiró. Debe volver a ingresar al módulo de Transacciones en Línea con el usuario y contraseña correspondientes.                                                                                                                                                                                                                                                                     |
+
+## 7.	CONSULTA EXTRACTO DE HONORARIOS
+
+### Honorario médico tramitado previamente
+
+Los usuarios podran radicar una sola vez el honorario, cuando el profesional de salud indique el año y mes del honorario medico a radicar y el honorario ya cuente con una cuenta por pagar asociada en SAP, se obtendrá el mensaje de error "Honorario médico tramitado previamente".
+
+### Honorarios médicos no disponibles
+
+Si el usuario consulta por un honorario médico del cual no existan extractos de honorarios disponibles para radicar, cuando el profesional de salud indique el año y mes del honorario medico a radicar y el servicio no retorne información, se obtendrá el mensaje de error "No existen extractos de honorarios disponibles para radicar".
+
+### Usuario obligado a facturar electrónicamente 
+
+Los usuarios obligados a facturar electrónicamente que consulten los honorarios disponibles desde transar, obtendrán el mensaje de error "Su canal de radicación es por medio del buzón de facturación electrónica de compensar factura.electronica@compensar.com".
+
