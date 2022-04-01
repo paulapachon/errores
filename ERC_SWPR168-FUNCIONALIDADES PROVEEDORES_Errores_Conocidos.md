@@ -27,7 +27,6 @@
   - [6.	DESCUENTOS FINANCIEROS](#6descuentos-financieros)
     - [Mensajes de información](#mensajes-de-información)
     - [Mensajes de error](#mensajes-de-error)
-
 # FUNCIONALIDADES PROVEEDORES
 
 Los errores conocidos expuestos en el presente documento hacen referencia a validaciones de nivel 1 que debe realizar la mesa de ayuda, en caso de persistir el error se debe escalar a nivel 2 que para estos casos es el ULA de la aplicación, quien hará las validaciones pertinentes y dará solución de ser posible, de igual manera determinará a quien debe escalar de ser necesario.
