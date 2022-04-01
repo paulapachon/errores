@@ -12,6 +12,22 @@
 | 06/09/2021                                                                                 | Se anexan errores conocidos de descuentos financieros.  |
 | 21/09/2021                                                                                 | Se anexa error conocido de navegador internet Explorer. Los errores conocidos presentes en este documento deben ser atendidos por soporte nivel 1.|
 
+- [FUNCIONALIDADES PROVEEDORES](#funcionalidades-proveedores)
+  - [1.	CONSULTAR ORDEN DE COMPRA](#1consultar-orden-de-compra)
+    - [Consulta Órdenes de Compra Rango de Fechas](#consulta-órdenes-de-compra-rango-de-fechas)
+    - [Consulta Órdenes de Compra por Orden de Compra](#consulta-órdenes-de-compra-por-orden-de-compra)
+    - [PDF Orden de Compra](#pdf-orden-de-compra)
+  - [2.	CONSULTAR RECIBO A SATISFACCIÓN (RAS) O INGRESO DE MATERIALES](#2consultar-recibo-a-satisfacción-ras-o-ingreso-de-materiales)
+  - [3.	EXTRACTO PROVEEDOR](#3extracto-proveedor)
+  - [4.	VENTANAS EMERGENTES](#4ventanas-emergentes)
+  - [5.	RADICAR FACTURA - FORMULARIO NO OBLIGADOS](#5radicar-factura---formulario-no-obligados)
+    - [Campos obligatorios](#campos-obligatorios)
+    - [Adjuntos obligatorios](#adjuntos-obligatorios)
+    - [Navegador compatible](#navegador-compatible)
+  - [6.	DESCUENTOS FINANCIEROS](#6descuentos-financieros)
+    - [Mensajes de información](#mensajes-de-información)
+    - [Mensajes de error](#mensajes-de-error)
+
 # FUNCIONALIDADES PROVEEDORES
 
 Los errores conocidos expuestos en el presente documento hacen referencia a validaciones de nivel 1 que debe realizar la mesa de ayuda, en caso de persistir el error se debe escalar a nivel 2 que para estos casos es el ULA de la aplicación, quien hará las validaciones pertinentes y dará solución de ser posible, de igual manera determinará a quien debe escalar de ser necesario.
