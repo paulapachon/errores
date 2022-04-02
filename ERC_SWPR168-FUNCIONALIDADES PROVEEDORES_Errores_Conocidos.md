@@ -194,22 +194,22 @@ No se recomienda utilizar Internet Explorer ya que no se encuentra soportado por
 
 Los usuarios podran radicar una sola vez el honorario, cuando el profesional de salud indique el año y mes del honorario medico a radicar y el honorario ya cuente con una cuenta por pagar asociada en SAP, se obtendrá el mensaje de error "Honorario médico tramitado previamente".
 
-![](Images/error1.png)
+![](Images/error1.PNG)
 
 ### Honorarios médicos no disponibles
 
 Si el usuario consulta por un honorario médico del cual no existan extractos de honorarios disponibles para radicar, cuando indique el año y mes del honorario medico a radicar y el servicio no retorne información, se obtendrá el mensaje de error "No existen extractos de honorarios disponibles para radicar".
 
-![](Images/error2.png)
+![](Images/error2.PNG)
 
 ### Usuario obligado a facturar electrónicamente 
 
 Los usuarios obligados a facturar electrónicamente que consulten los honorarios disponibles desde transar, obtendrán el mensaje de error "Su canal de radicación es por medio del buzón de facturación electrónica de compensar factura.electronica@compensar.com".
 
-![](Images/error3.png)
+![](Images/error3.PNG)
 
 ### El profesional no existe
 
 Cuando un usuario que no se identifica como profesional, por lo cual no tiene honorarios asociados, consulta su extracto de honorarios, el sistema retorna el error "El porfesional relacionado XXXX no existe".
 
-![](Images/error4.png)
+![](Images/error4.PNG)
